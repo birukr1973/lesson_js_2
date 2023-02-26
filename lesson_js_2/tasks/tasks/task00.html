@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>task00</title>
+</head>
+
+<body>
+	<div class="link">
+		<h3><a href="../index.html">Повернутись до ДЗ №2</a></h3>
+	</div>
+
+	<div class="title">
+		<h2>Задача 0</h2>
+		<p>Обчислити значення виразів:</p>
+
+		<ol>
+			<li>S<sub>1</sub>=a+12+b</li>
+			<li>S<sub>2</sub>=√(((a+b)/2a))</li>
+			<li>S<sub>3</sub>=∛(a+b)с</li>
+			<li>S<sub>4</sub>=sin(a/(-b))</li>
+		</ol>
+	</div>
+
+	<div class="task">
+		<script>
+			//1. Вводимо необхідні данні від користувача.
+			let a = parseFloat(prompt('Задача 0: Введіть значення змінної - a', '0'))
+			let b = parseFloat(prompt('Задача 0: Введіть значення змінної - b', '0'))
+			let c = parseFloat(prompt('Задача 0: Введіть значення змінної - c', '0'))
+
+
+			//2. Обчислюемо вирази.
+			let s1 = a + 12 + b
+			let s2 = Math.sqrt((a + b) / (2 * a))
+			let s3 = Math.cbrt((a + b) * c)
+			let s4 = Math.sin(a / (-b))
+
+
+			//3. Виводимо результат.
+			document.write(`1.Значення виразу S1 = ${s1}<br>`)
+			document.write(`2.Значення виразу S2 = ${s2}<br>`)
+			document.write(`3.Значення виразу S3 = ${s3.toFixed(2)}<br>`)
+			document.write(`4.Значення виразу S4 = ${s4.toFixed(2)}`)
+		</script>
+	</div>
+
+</body>
+
+</html>

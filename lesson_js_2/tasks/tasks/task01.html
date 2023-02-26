@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>task01</title>
+</head>
+
+<body>
+	<div class="link">
+		<h3><a href="../index.html">Повернутись до ДЗ №2</a></h3>
+	</div>
+	<div class="title">
+		<h2>Задача 1</h2>
+		<p>Знайти суму, добуток та частку двох дійсних чисел. Результат вивести у формі таблиці.</p>
+	</div>
+	<div class="task">
+
+		<script>
+			// 1. Вводимо необхідні данні (Аргументи) від користувача.
+			let a = parseFloat(prompt("Задача 1: Введіть значення змінної - a", "0"))
+			let b = parseFloat(prompt("Задача 1: Введіть значення змінної - b", "0"))
+
+			//2. Обчислюемо вирази.
+			let sum = a + b;
+			let multiply = a * b;
+			let fraction = a / b;
+
+			//3. Виводимо результат.
+			document.write(`
+			<table border>
+				<tr><td>Зміннна a = ${a}<br>Змінна b = ${b}</td><td>Обчислити вираз</td><td>Результат</td></tr>
+				<tr><td>Сума</td><td>a + b<td>${sum}</td></tr>
+				<tr><td>Добуток</td><td>a * b</td><td>${multiply}</td></tr>
+				<tr><td>Частка</td><td>a /b</td><td>${fraction}</td></tr>
+				</table>`)
+		</script>
+	</div>
+
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>task02</title>
+</head>
+
+<body>
+	<!-- <a href="./index.html">Повернутись на головну сторінку</a> -->
+
+	<div class="link">
+		<h3><a href="../index.html">Повернутись до ДЗ №2</a></h3>
+	</div>
+	<div class="title">
+		<h2>Задача 2</h2>
+		<p>Дано рік народження (дата: 1 січня) та поточний рік. Знайти кількість повних років.</p>
+	</div>
+	<div class="task">
+
+		<script>
+			// 1. Вводимо необхідні данні від користувача.
+			let birthYear = parseInt(prompt('Задача 2: Введіть рік народження', ''))
+			let currentYear = parseInt(prompt("Задача 2: Введіть поточний рік", ''))
+
+			//2. Обчислюемо вирази.
+			let age = currentYear - birthYear
+
+			//3. Виводимо результат.
+
+			// document.write(`Вік народження = ${birthYear} років.<br>`)
+			// document.write(`Поточний рік = ${currentYear} років.<br>`)
+			// document.write(`Повних років = ${age} років.`)
+
+			document.write(`
+				<table border = 3>
+					<tbody>
+						<tr>
+							<td>Вік народження</td>
+							<td>${birthYear}</td>
+						</tr>
+						<tr>
+							<td>Поточний рік</td>
+							<td>${currentYear}</td>
+						</tr>
+						<tr>
+							<td>Повних років</td>
+							<td>${age}</td>
+						</tr>
+					<tbody>
+				<table>`)
+		</script>
+	</div>
+
+
+</body>
+
+</html>

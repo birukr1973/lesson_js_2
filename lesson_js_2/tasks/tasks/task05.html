@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>task05</title>
+</head>
+
+<body>
+	<div class="link">
+		<h3><a href="../index.html">Повернутись до ДЗ №2</a></h3>
+	</div>
+	<div class="title">
+		<h2>Задача 5</h2>
+		<p>Дано кількість секунд, що пройшла від початку доби. Визначити скільки це годин і хвилин.</p>
+	</div>
+	<div class="task">
+
+		<script>
+			//1. Вводимо необхідні данні (Аргументи) від користувача.
+			let numberSeconds = parseFloat(prompt('Задача 5: Введіть кількість секунд, сек.', '0'))
+
+
+			//2. Вводимо допоміжні величини.
+			const SECONDS_IN_HOUR = 3600
+			const SECONDS_IN_MINUTE = 60
+
+
+			//3. Обчислюемо вирази (знаходимо проміжкові величини).
+			let getSecondsInHour = (numberSeconds / SECONDS_IN_HOUR)
+			let getSecondsInMinute = (numberSeconds / SECONDS_IN_MINUTE)
+
+
+			//4. Виводмо результат.
+			document.write(`Введено ${numberSeconds} секунд<br> це складае:<br>
+				<ul>
+			<li>${getSecondsInHour.toFixed(2)} годин.<br></li>
+			<li>${getSecondsInMinute.toFixed(2)} хвилин.</li>
+				</ul>`)
+
+
+		</script>
+
+	</div>
+
+</body>
+
+</html>
